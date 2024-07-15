@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'RaleWay';
+    src: url('../../../component/Fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Radio Canada';
+    src: url('../../../component/Fonts/Radio_Canada/RadioCanada-VariableFont_wdth\,wght.ttf');
+}
+
+
+
+div.main {
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+
+div.main div.div1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+div.main div.div1 h2 {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 62.4px */
+}
+
+
+div.main div.div1 p {
+    width: 90%; 
+    color: #403E3E;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 33.8px */
+}
+
+
+div.main div.div2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 100px;
+    padding-right: 100px;
+
+    gap: 3rem;
+
+    /* border: 1px solid red; */
+}
+
+div.main div.div2 div.txt {
+    width: 50%;
+}
+
+
+div.main div.div2 div.txt p {
+    width: 100%;
+    padding-left: 10px; 
+
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    text-shadow: 0px 4px 22px rgba(255, 255, 255, 0.25);
+    font-family: Raleway;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 44.2px */
+}
+
+
+div.main div.div2 div.images {
+    width: 50%;
+    flex-shrink: 0;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+
+/* div.main div.div2 div.images div.imgbg {
+    width: 988px;
+    margin-left: -200px;
+    background: rgba(168, 204, 172, 0.45);
+    filter: blur(250px);
+    position: absolute;
+    z-index: -1;
+} */
+
+
+
+div.main div.div2 div.images img.img1 {
+    width: 370px;
+    height: 361px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+
+    margin-top: -250px;
+    margin-right: -78px;
+
+    z-index: 2;
+}
+
+
+div.main div.div2 div.images img.img2 {
+    width: 397px;
+    height: 378px;
+    flex-shrink: 0;
+
+    border-radius: 20px; 
+
+    margin-bottom: -200px;
+}
+
+
+
+
+
+/* Scrolling animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+div.main div.div1 p {
+    transition-delay: 200ms;
+}
+
+
+div.main div.div2 div.images img.img2 {
+    transition-delay: 200ms;
+}
+
+
+@media screen and (max-width: 1500px) {
+    div.main div.div2 div.images img.img1 {
+        width: 300px;
+        height: 300px;
+        margin-top: -250px;
+        margin-right: -78px;
+    }
+    
+    
+    div.main div.div2 div.images img.img2 {
+        width: 300px;
+        height: 300px;
+        flex-shrink: 0;
+        margin-bottom: -200px;
+    }
+}
+
+@media screen and (max-width: 1199.8px) {
+    div.main div.div2 div.txt p {
+        width: 100%;
+        padding-left: 10px; 
+        font-size: 30px;
+        line-height: 120%; /* 44.2px */
+    }
+
+    div.main div.div2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    div.main div.div2 div.images {
+        height: 600px;
+    }
+
+    div.main div.div2 div.images img.img1 {
+        width: 250px;
+        height: 250px;
+        margin-top: -200px;
+        margin-right: -78px;
+    }
+    
+    
+    div.main div.div2 div.images img.img2 {
+        width: 250px;
+        height: 250px;
+        flex-shrink: 0;
+        margin-bottom: -200px;
+    }
+
+}
+
+@media screen and (max-width: 991.8px) {
+    div.main div.div2 div.txt p {
+        width: 100%;
+        padding-left: 10px; 
+        font-size: 24px;
+        line-height: 120%; /* 44.2px */
+    }
+
+    div.main div.div2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    div.main div.div2 div.images {
+        height: 500px;
+    }
+
+    div.main div.div2 div.images img.img1 {
+        width: 200px;
+        height: 200px;
+        margin-top: -200px;
+        margin-right: -78px;
+    }
+    
+    
+    div.main div.div2 div.images img.img2 {
+        width: 200px;
+        height: 200px;
+        flex-shrink: 0;
+        margin-bottom: -150px;
+    }
+}
+
+@media screen and (max-width: 767.8px){
+    div.main {
+        padding-top: 50px;
+    }
+
+    div.main div.div1 h2 {
+        font-size: 38px;
+    }
+    
+    
+    div.main div.div1 p {
+        font-size: 20px;
+    }
+
+    div.main div.div2 div.txt p {
+        width: 100%;
+        padding-left: 10px; 
+        font-size: 18px;
+        line-height: 120%; /* 44.2px */
+    }
+
+    div.main div.div2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div.main div.div2 div.images {
+        height: 400px;
+    }
+
+    div.main div.div2 div.images img.img1 {
+        width: 150px;
+        height: 150px;
+        margin-top: -170px;
+        margin-right: -78px;
+    }
+    
+    
+    div.main div.div2 div.images img.img2 {
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
+        margin-bottom: -100px;
+    }
+}
+
+@media screen and (max-width: 575.8px){
+    div.main div.div1 h2 {
+        font-size: 32px;
+    }
+    
+    
+    div.main div.div1 p {
+        font-size: 14px;
+    }
+
+    div.main div.div2 div.txt p {
+        width: 100%;
+        padding-left: 10px; 
+        font-size: 14px;
+        line-height: 120%; /* 44.2px */
+    }
+
+    div.main div.div2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.main div.div2 div.images {
+        height: 300px;
+    }
+
+    div.main div.div2 div.images img.img1 {
+        width: 120px;
+        height: 120px;
+        margin-top: -120px;
+        margin-right: -50px;
+    }
+    
+    
+    div.main div.div2 div.images img.img2 {
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+        margin-bottom: -80px;
+    }
+}

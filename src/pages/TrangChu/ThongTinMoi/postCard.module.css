@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'RaleWay';
+    src: url('../../../component/Fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Radio Canada';
+    src: url('../../../component/Fonts/Radio_Canada/RadioCanada-VariableFont_wdth\,wght.ttf');
+}
+
+
+div.main {
+    width: 100%;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: 1px solid #B9B9B9;
+    background: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.main div.post_div1 {
+    width: 80%;
+    padding-top: 30px;
+}
+
+
+div.main div.post_div1 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+
+div.main div.post_div2 {
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* border: 1px solid red; */
+}
+
+
+div.main div.post_div2 div.info1 {
+    width: 102px;
+    height: 27px;
+    flex-shrink: 0;
+
+    border-radius: 30px;
+    background: rgba(238, 238, 238, 0.60);
+
+    display: flex;
+}
+
+
+div.main div.post_div2 div.info1 img {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+}
+
+
+div.main div.post_div2 div.info1 p {
+    width: 76px; 
+    padding-top: 3.2px;
+
+    color: #018E42;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Radio Canada";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 18.2px */
+}
+
+
+div.main div.post_div2 div.info2 {
+    width: 100%;
+    flex-shrink: 0;
+    padding-top: 7px;
+}
+
+
+div.main div.post_div2 div.info2 p {
+    width: 100%; 
+
+    color: #1E266D;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Radio Canada";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 28.6px */
+}
+
+
+div.main div.post_div2 div.info3 {
+    width: 100%;
+    flex-shrink: 0;
+
+    display: flex;
+}
+
+
+div.main div.post_div2 div.info3 img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+
+div.main div.post_div2 div.info3 p {
+    width: 100%; 
+    margin-left: 4.2px;
+    padding-top: 3px;
+
+    color: #1E266D;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Radio Canada";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 24.7px */
+}
+
+
+@media screen and (max-width: 1500px) {
+
+    div.main div.post_div1 {
+        width: 80%;
+        padding-top: 30px;
+    }
+    
+    div.main div.post_div2 {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+    div.main div.post_div2 div.info1 {
+        width: 102px;
+        height: 27px;
+        border-radius: 30px;
+    }
+    
+    div.main div.post_div2 div.info1 img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    div.main div.post_div2 div.info1 p {
+        width: 76px; 
+        font-size: 14px;
+    }
+    
+    div.main div.post_div2 div.info2 {
+        padding-top: 7px;
+    }
+    
+    div.main div.post_div2 div.info2 p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    div.main div.post_div2 div.info3 img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    div.main div.post_div2 div.info3 p {
+        padding-top: 3px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+}
+
+@media screen and (max-width: 1199.8px) {
+    div.main div.post_div1 {
+        width: 85%;
+        padding-top: 20px;
+    }
+    
+    div.main div.post_div2 {
+        width: 85%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    
+    div.main div.post_div2 div.info1 {
+        width: 80px;
+        height: 22px;
+        border-radius: 30px;
+    }
+    
+    div.main div.post_div2 div.info1 img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    div.main div.post_div2 div.info1 p {
+        width: 76px; 
+        font-size: 12px;
+    }
+    
+    div.main div.post_div2 div.info2 {
+        padding-top: 7px;
+    }
+    
+    div.main div.post_div2 div.info2 p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    div.main div.post_div2 div.info3 img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    div.main div.post_div2 div.info3 p {
+        padding-top: 3px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 991.8px) {
+    div.main div.post_div1 {
+        width: 90%;
+        padding-top: 20px;
+    }
+    
+    div.main div.post_div2 {
+        width:90%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    
+    div.main div.post_div2 div.info1 {
+        width: 80px;
+        height: 22px;
+        border-radius: 30px;
+    }
+    
+    div.main div.post_div2 div.info1 img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    div.main div.post_div2 div.info1 p {
+        width: 76px; 
+        font-size: 12px;
+    }
+    
+    div.main div.post_div2 div.info2 {
+        padding-top: 7px;
+    }
+    
+    div.main div.post_div2 div.info2 p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    div.main div.post_div2 div.info3 img {
+        width: 15px;
+        height: 15px;
+    }
+    
+    div.main div.post_div2 div.info3 p {
+        padding-top: 3px;
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767.8px){
+    div.main div.post_div1 {
+        width: 80%;
+        padding-top: 30px;
+    }
+    
+    div.main div.post_div2 {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+    div.main div.post_div2 div.info1 {
+        width: 102px;
+        height: 27px;
+        border-radius: 30px;
+    }
+    
+    div.main div.post_div2 div.info1 img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    div.main div.post_div2 div.info1 p {
+        width: 76px; 
+        font-size: 14px;
+    }
+    
+    div.main div.post_div2 div.info2 {
+        padding-top: 7px;
+    }
+    
+    div.main div.post_div2 div.info2 p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    div.main div.post_div2 div.info3 img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    div.main div.post_div2 div.info3 p {
+        padding-top: 3px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 575.8px){
+    div.main div.post_div1 {
+        width: 80%;
+        padding-top: 30px;
+    }
+    
+    div.main div.post_div2 {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+    div.main div.post_div2 div.info1 {
+        width: 102px;
+        height: 27px;
+        border-radius: 30px;
+    }
+    
+    div.main div.post_div2 div.info1 img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    div.main div.post_div2 div.info1 p {
+        width: 76px; 
+        font-size: 14px;
+    }
+    
+    div.main div.post_div2 div.info2 {
+        padding-top: 7px;
+    }
+    
+    div.main div.post_div2 div.info2 p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    div.main div.post_div2 div.info3 img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    div.main div.post_div2 div.info3 p {
+        padding-top: 3px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}

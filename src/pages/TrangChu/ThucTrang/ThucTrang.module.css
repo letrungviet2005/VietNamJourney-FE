@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../../component/Fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Radio Canada';
+    src: url('../../../component/Fonts/Radio_Canada/RadioCanada-VariableFont_wdth\,wght.ttf');
+}
+
+
+div.main {
+    width: 100%;
+
+    padding-top: 31px;
+
+    background: rgba(130, 255, 157, 0.10); 
+
+    /* border: 1px solid red; */
+}
+
+
+div.main div.div1 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+
+div.main div.div1 h2 {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 62.4px */
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+
+div.main div.div1 p {
+    width: 80%;
+
+    color: #403E3E;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 33.8px */
+
+}
+
+
+div.main div.div2 {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+div.main div.div2 div.div2_1 {
+    width: 49%;
+    height: 450px;
+    flex-shrink: 0;
+    background-color: white;
+    padding: 50px;
+}
+
+
+
+div.main div.div2 div.div2_2 {
+    width: 51%;
+    flex-shrink: 0;
+
+    background: #329c30;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.main div.div2 div.div2_2 p {
+    color: #FFF;
+    text-align: justify;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Radio Canada";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 33.8px */
+    padding: 50px;
+}
+
+
+/* Scrolling animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+div.main div.div1 p {
+    transition-delay: 200ms;
+}
+
+
+@media screen and (max-width: 1500px) {
+  
+}
+
+@media screen and (max-width: 1199.8px) {
+    div.main div.div2 div.div2_1 {
+        width: 100%;
+        height: 450px;
+        padding: 50px;
+    }
+    
+    div.main div.div2 div.div2_2 {
+        width: 100%;
+    }
+    
+    
+    div.main div.div2 div.div2_2 p {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 991.8px) {
+    div.main div.div1 h2 {
+        font-size: 36px;
+    }
+    
+    div.main div.div1 p {
+        font-size: 28px;  
+    }
+}
+
+@media screen and (max-width: 767.8px){
+    div.main div.div1 h2 {
+        font-size: 30px;
+    }
+    
+    div.main div.div1 p {
+        font-size: 24px;  
+    }
+
+    div.main div.div2 div.div2_1 {
+        width: 100%;
+        height: 300px;
+        padding: 30px;
+    }
+
+    div.main div.div2 div.div2_2 {
+        padding: 20px 5px;
+    }
+    
+    div.main div.div2 div.div2_2 p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 575.8px){
+    div.main div.div1 h2 {
+        font-size: 24px;
+    }
+    
+    div.main div.div1 p {
+        font-size: 18px;  
+    }
+
+    div.main div.div2 div.div2_1 {
+        width: 100%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    div.main div.div2 div.div2_2 p {
+        padding: 20px 10px;
+    }
+    
+    div.main div.div2 div.div2_2 p {
+        font-size: 16px;
+    }
+}

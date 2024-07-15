@@ -1,0 +1,421 @@
+@font-face {
+    font-family: 'RaleWay';
+    src: url('../../../component/Fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Radio Canada';
+    src: url('../../../component/Fonts/Radio_Canada/RadioCanada-VariableFont_wdth\,wght.ttf');
+}
+
+
+div.main {
+    width: 100%;
+    height: 962px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+
+div.main div.div1 {
+    width: 100%;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.60) 100%); */
+
+    /* border: 1px solid red; */
+}
+
+
+div.main div.div1 p {
+
+    margin: 3.8rem 0px 5px 0px;
+
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 41.6px */
+}
+
+
+div.main div.div1 img {
+    width: 62.668px;
+    height: 63px;
+    flex-shrink: 0;
+}
+
+
+div.main div.div2 {
+    width: 100%;
+    flex-shrink: 0;
+
+    /* background: rgba(0, 0, 0, 0.60); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+div.main div.div2 div.txt {
+    display: flex;
+    justify-content: center;
+}
+
+
+div.main div.div2 div.txt p {
+    width: 80%;
+    /* height: 114px; */
+    flex-shrink: 0;
+
+    margin-top: 190px;
+
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    text-shadow: 0px 4px 22px rgba(255, 255, 255, 0.25);
+    font-family: Raleway;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 44.2px */
+}
+
+
+div.main div.div2 div.bt {
+    margin-top: 62px;
+}
+
+
+div.main div.div2 div.bt button {
+    width: 293.447px;
+    height: 76px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: 3px solid #FFF;
+    background: rgba(58, 177, 55, 0.00);
+
+    padding-right: 25px;
+
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 35.1px */
+}
+
+
+div.main div.div2 div.bt img {
+    width: 36.805px;
+    height: 37px;
+    flex-shrink: 0;
+    margin-left: -60px;
+    margin-top: -9px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Scrolling animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+.vid {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Hoặc chiều cao mong muốn */
+    overflow: hidden;
+}
+
+.vid video {
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* transform: translate(-50%, -50%); */
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+    div.main {
+        height: 962px;
+    }
+    
+    div.main div.div1 {
+
+    }
+    
+    div.main div.div1 p {
+        font-size: 32px;
+    }
+    
+    div.main div.div1 img {
+        width: 62.668px;
+        height: 63px;
+    }
+    
+    div.main div.div2 {
+
+    }
+    
+    div.main div.div2 div.txt p {
+        font-size: 28px;
+    }  
+    
+    div.main div.div2 div.bt {
+        margin-top: 62px;
+    }
+    
+    
+    div.main div.div2 div.bt button {
+        width: 293.447px;
+        height: 76px;
+        border-radius: 10px;
+        padding-right: 25px;
+        font-size: 27px;
+    }
+    
+    
+    div.main div.div2 div.bt img {
+        width: 36.805px;
+        height: 37px;
+        margin-left: -60px;
+        margin-top: -9px;
+    }
+}
+
+@media screen and (max-width: 1199.8px) {
+    div.main {
+        height: 962px;
+    }
+    
+    div.main div.div1 {
+
+    }
+    
+    div.main div.div1 p {
+        font-size: 32px;
+    }
+    
+    div.main div.div1 img {
+        width: 62.668px;
+        height: 63px;
+    }
+    
+    div.main div.div2 {
+
+    }
+    
+    div.main div.div2 div.txt p {
+        font-size: 28px;
+        margin-top: 120px;
+    }  
+    
+    div.main div.div2 div.bt {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    
+    div.main div.div2 div.bt button {
+        width: 293.447px;
+        height: 76px;
+        border-radius: 10px;
+        padding-right: 25px;
+        font-size: 27px;
+    }
+    
+    
+    div.main div.div2 div.bt img {
+        width: 36.805px;
+        height: 37px;
+        margin-left: -60px;
+        margin-top: -9px;
+    }
+
+}
+
+@media screen and (max-width: 991.8px) {
+    div.main {
+        height: 600px;
+    }
+    
+    div.main div.div1 {
+
+    }
+    
+    div.main div.div1 p {
+        font-size: 28px;
+    }
+    
+    div.main div.div1 img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    div.main div.div2 {
+
+    }
+    
+    div.main div.div2 div.txt p {
+        font-size: 28px;
+        margin-top: 80px;
+    }  
+    
+    div.main div.div2 div.bt {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    
+    div.main div.div2 div.bt button {
+        width: 293.447px;
+        height: 76px;
+        border-radius: 10px;
+        padding-right: 25px;
+        font-size: 27px;
+    }
+    
+    
+    div.main div.div2 div.bt img {
+        width: 36.805px;
+        height: 37px;
+        margin-left: -60px;
+        margin-top: -9px;
+    }
+}
+
+@media screen and (max-width: 767.8px){
+    div.main {
+        height: 450px;
+    }
+    
+    div.main div.div1 {
+
+    }
+    
+    div.main div.div1 p {
+        font-size: 24px;
+    }
+    
+    div.main div.div1 img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    div.main div.div2 {
+
+    }
+    
+    div.main div.div2 div.txt p {
+        font-size: 20px;
+        margin-top: 50px;
+    }  
+    
+    div.main div.div2 div.bt {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    
+    div.main div.div2 div.bt button {
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        padding-right: 25px;
+        font-size: 24px;
+    }
+    
+    
+    div.main div.div2 div.bt img {
+        width: 25px;
+        height: 25px;
+        margin-left: -50px;
+        margin-top: -9px;
+    }
+}
+
+@media screen and (max-width: 575.8px){
+    div.main {
+        height: 350px;
+    }
+    
+    div.main div.div1 {
+
+    }
+    
+    div.main div.div1 p {
+        font-size: 20px;
+    }
+    
+    div.main div.div1 img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    div.main div.div2 {
+
+    }
+    
+    div.main div.div2 div.txt p {
+        font-size: 16px;
+        margin-top: 30px;
+    }  
+    
+    div.main div.div2 div.bt {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    
+    div.main div.div2 div.bt button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        padding-right: 25px;
+        font-size: 18px;
+    }
+    
+    
+    div.main div.div2 div.bt img {
+        width: 20px;
+        height: 20px;
+        margin-left: -40px;
+        margin-top: 0px;
+    }
+}

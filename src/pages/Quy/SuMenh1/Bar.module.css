@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../../component/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+
+@font-face {
+    font-family: 'RaleWay';
+    src: url('../../../component/Fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+
+div.main {
+    width: 100%;
+    flex-shrink: 0;
+
+    display: flex;
+    line-height: 100%;
+}
+
+
+div.main p {
+    padding-top: 14px;
+
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    text-shadow: 0px 4px 22px rgba(255, 255, 255, 0.25);
+    font-family: Raleway;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 36.4px */
+    margin-bottom: 0;
+}
+
+div.main img {
+    height: 50px;
+    width: auto;
+    aspect-ratio: 1/1;
+}
+
+
+@media screen and (max-width: 1500px) {
+    div.main {
+        width: 100%;
+    }
+    
+    
+    div.main p {
+        padding-top: 14px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1199.8px) {
+    div.main {
+        width: 100%;
+    }
+    
+    
+    div.main p {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    div.main img {
+        height: 50px;
+        width: auto;
+        aspect-ratio: 1/1;
+    }
+}
+
+@media screen and (max-width: 991.8px) {
+    div.main {
+        width: 100%;
+    }
+    
+    
+    div.main p {
+        padding-top: 14px;
+        font-size: 24px;
+    }
+
+    div.main img {
+        height: 50px;
+        width: auto;
+        aspect-ratio: 1/1;
+    }
+}
+
+@media screen and (max-width: 767.8px){
+  
+}
+
+@media screen and (max-width: 575.8px){
+    div.main {
+        width: 100%;
+    }
+    
+    
+    div.main p {
+        padding-top: 16px;
+        font-size: 18px;
+    }
+
+    div.main img {
+        height: 50px;
+        width: auto;
+        aspect-ratio: 1/1;
+    }
+}
+
+
+
+
+/* Scrolling animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
