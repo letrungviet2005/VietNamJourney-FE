@@ -158,6 +158,7 @@ function ChatBoxGroup() {
                             <>
                                 {messages.map((msg, index) => (
                                     <div key={index} className={styles.message}>
+                                        {msg.created_at && <small style={{ textAlign: 'center' }}>{msg.created_at}</small>}
                                         <div style={{marginBottom :'0.1rem'}}>
                                             <img alt="logo" src={msg.user_image} style={{ display: msg.user_from == user_from ? 'none' : 'block',width : '1rem',height : "1rem", borderRadius : '50%'}}></img>
                                         </div>
@@ -166,7 +167,7 @@ function ChatBoxGroup() {
                                             <span>{msg.content}</span>
                                         </div>}
                                         {msg.image && <img src={msg.image} alt="Sent" style={{ marginLeft: msg.user_from == user_from ? 'auto' : '0' }} />}
-                                        <small style={{ marginLeft: msg.user_from == user_from ? 'auto' : '0' }}>{msg.created_at}</small>
+                                        
                                     </div>
                                 ))}
                             </>

@@ -175,6 +175,14 @@ function ChatBoxUser() {
                 ) : (
                     messages.length > 0 && messages.map((msg, index) => (
                         <div key={index} className={`${styles.msg} ${getMessageAlignment(msg)}`}>
+                            {msg.created_at && <span
+                                className={styles.msgTime}
+                                style={{
+                                    marginLeft : 'auto',marginRight : 'auto'
+                                }}
+                            >
+                                {msg.created_at}
+                            </span>}
                             {msg.content && (
                                 <h6 className={`${styles.msgContent} ${msg.user_from.toString() === user_from ? styles.msgContentFromUser : styles.msgContentFromOther}`}>
                                     {msg.content}
@@ -191,15 +199,7 @@ function ChatBoxUser() {
                                     }}
                                 />
                             )}
-                            <span
-                                className={styles.msgTime}
-                                style={{
-                                    marginLeft: msg.user_from.toString() === user_from ? 'auto' : '0',
-                                    marginRight: msg.user_from.toString() !== user_from ? 'auto' : '0'
-                                }}
-                            >
-                                {msg.created_at}
-                            </span>
+                            
                         </div>
                     ))
                 )}
